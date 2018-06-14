@@ -1,0 +1,16 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+  application:
+    name: ms-message
+
+server:
+  port: 8082
+
+netease:
+  key: 6c4b006b49dae1fa33523a2215bd35cc
+  secret: ffae34a83b01
+  nonce: 100000
