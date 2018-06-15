@@ -1,5 +1,7 @@
 package com.ypp.msmessage.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.ypp.msmessage.model.QueryMessageRequest;
 import com.ypp.msmessage.service.YppService;
 import lombok.extern.slf4j.Slf4j;
@@ -45,7 +47,6 @@ public class YppController {
                 .toUser(toUser).build();
 
         String result = yppService.queryUserMessage(request);
-
 
         model.put("message",result);
         return "ypp";
