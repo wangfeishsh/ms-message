@@ -12,9 +12,6 @@ public class MsMessageApplication  extends SpringBootServletInitializer {
 
 	@Bean
 	public OkHttpClient client(){
-		//this.connectTimeout = 10000;
-		//this.readTimeout = 10000;
-		//this.writeTimeout = 10000;
 		return new OkHttpClient();
 	}
 
